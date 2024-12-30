@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Adivina_Quien_Disney/static/css/main.84d6964d.css",
+    "main.js": "/Adivina_Quien_Disney/static/js/main.42ad7dab.js",
+    "index.html": "/Adivina_Quien_Disney/index.html",
+    "main.84d6964d.css.map": "/Adivina_Quien_Disney/static/css/main.84d6964d.css.map",
+    "main.42ad7dab.js.map": "/Adivina_Quien_Disney/static/js/main.42ad7dab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84d6964d.css",
+    "static/js/main.42ad7dab.js"
+  ]
+}
