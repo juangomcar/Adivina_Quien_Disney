@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    color: white;
+    overflow-x: hidden;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* 🎲 Botón Generador */
+  button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(to right, #FF5733, #FFC300);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* 🎥 Nombre de la Película */
+  .movie-name {
+    font-size: 2rem;
+    margin-top: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* 📋 Título de la Lista */
+  h2 {
+    margin-top: 40px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* 🎬 Lista de Películas */
+  .movie-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    max-width: 80%;
+  }
+  
+  .movie-item {
+    background: linear-gradient(to right, #FFD700, #FFB347);
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .movie-item:hover {
+    transform: scale(1.1);
+  }
+  
+  .movie-item.disabled {
+    background: #d3d3d3;
+    text-decoration: line-through;
+    color: #555;
+    cursor: pointer;
+  }
+
+/* 🌟 Fondo con Movimiento Rápido y Colores Claros */
+body {
+    margin: 0;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    background: linear-gradient(
+      270deg,
+      #E0F7FA, /* Celeste Muy Claro */
+      #B3E5FC, /* Azul Claro */
+      #81D4FA, /* Celeste Brillante */
+      #64B5F6, /* Azul Vivo */
+      #42A5F5, /* Azul Medio */
+      #90CAF9, /* Azul Suave */
+      #C5CAE9, /* Lila Claro */
+      #F8BBD0, /* Rosa Claro */
+      #FFCCBC, /* Naranja Suave */
+      #FFE0B2  /* Amarillo Pastel */
+    );
+    background-size: 600% 600%;
+    animation: moveBackground 8s infinite alternate ease-in-out;
+    color: white;
+    overflow-x: hidden;
+  }
+    
+  @keyframes moveBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
