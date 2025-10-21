@@ -9,12 +9,12 @@ const initialMovies = [
   'Valiente', 'Ratatouille', 'Buscando a Nemo', 'Cars', 'Hércules',
   'Los Increíbles', 'WALL-E', 'Soul', 'Big Hero 6', 'Pocahontas',
   'Blancanieves', 'Cenicienta', 'Bambi', 'Peter Pan', 'Dumbo',
-  'La Sirenita', 'Tarzán', 'Zootopia', 'Big Hero 6', 'Ralph el Demoledor',
-  'Valiente', 'El Libro de la Selva', 'Los Increíbles', 'Up', 'Buscando a Nemo',
-  'Cars', 'Ratatouille', 'WALL-E', 'Soul', 'Coco', 'Luca',  
-  'Alicia en el País de las Maravillas', 'Bolt','La Dama y el Vagabundo',
-  'Robin Hood', 'El Planeta del Tesoro','Winnie the Pooh', 'Pinocho','Chicken Little',
-  'La bella durmiente', 'El Jorobado de Notre Dame','Tierra de Osos', 'Encanto', 'La princesa y el sapo',  
+  'La Sirenita', 'Ralph el Demoledor', 'El Libro de la Selva',
+  'Luca', 'Alicia en el País de las Maravillas', 'Bolt',
+  'La Dama y el Vagabundo', 'Robin Hood', 'El Planeta del Tesoro',
+  'Winnie the Pooh', 'Pinocho', 'Chicken Little',
+  'La bella durmiente', 'El Jorobado de Notre Dame',
+  'Tierra de Osos', 'Encanto', 'La princesa y el sapo'
 ].map(name => ({ name, disabled: false }));
 
 function App() {
@@ -40,14 +40,14 @@ function App() {
       const randomIndex = Math.floor(Math.random() * activeMovies.length);
       setSelectedMovie(activeMovies[randomIndex].name);
     } else {
-      setSelectedMovie('¡No quedan películas disponibles!');
+      setSelectedMovie('Pelicula Libre');
     }
   };
 
   return (
     <div className="App">
       <MovieGenerator onGenerate={resetMovies} selectedMovie={selectedMovie} />
-      <h2>🎬 Lista de Películas</h2>
+      <h2>Lista de Películas</h2>
       <MovieList movies={movies} onToggleMovie={toggleMovie} />
     </div>
   );
